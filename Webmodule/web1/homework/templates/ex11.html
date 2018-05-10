@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FATTY</title>
+  </head>
+  <body>
+    <h2> </h2>
+    <h5>
+      {%if bmi1 < 16 %}
+      Serverly Underweight
+      {%elif bmi1 < 18.5%}
+      Underweight
+      {%elif bmi1 < 25%}
+      Normal
+      {%elif bmi1 < 30%}
+      Overweigt
+      {%else%}
+      Obese
+      {%endif%}
+    </h5>
+  </body>
+</html>

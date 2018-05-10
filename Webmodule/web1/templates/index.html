@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3> C4E BLOG </h3>
+
+<!-- jinja2 <template id=""> -->
+
+</template>
+  {% for items in posts%}
+    <h5> {{items.title}} </h5>
+    <p>
+      {{items.content}}
+    </p>
+    <i>{%if items.gender == 1 %}
+      By: Mr {{items.author}}
+    {%elif items.gender == 0%}
+      By: Mrs {{items.author}} </i>
+      {%endif%}
+  {% endfor %}
+
+    <!-- <h5>Tho con ket</h5>
+    <p>
+      Hom nay anh thay sai sai
+      <br>
+      Hoa ra dang high high high i ma
+    </p>
+
+    <h5> Sam Son </h5>
+    <p>
+      Lam tho la phai co van
+      <br>
+      Neu khong co thi se rat ngang
+    </p>
+    <i>By:Ta Bao Nghia</i>
+
+
+    <i>By:Dzzzz</i> -->
+
+  </body>
+</html>
+
+
+
+<!-- jinja2 conditional expressio
