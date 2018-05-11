@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/bmi/<float:w>/<float:h>)')
 
 def index(w,h):
-    h=h/100
+    h/=100
     bmi=(w/(h*h))
     if bmi <16:
         result='Severe underweight'
@@ -16,6 +16,6 @@ def index(w,h):
         result='Overweigt'
     else:
         result='Obese'
-        return"Your Fucking BMI:{0}. You are {1} noob".format(bmi,result)
-if __name__="__main__":
+    return"Your Fucking BMI:{0}. You are {1} noob".format(bmi,result)
+if __name__=="__main__":
     app.run(port=2000,debug=True)
