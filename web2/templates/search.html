@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mua dong khong lanh</title>
+  </head>
+  <body>
+    <h2>Search engine</h2>
+    {% for service in all_service %}
+    <div>
+
+        {%if service.gender == 0%}
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU0IbqtaxMlvNTmPoA4ODmj6-LPGICmfwH9vVF490HzwsCe6c" >
+        {%elif service.gender == 1%}
+        <img src="https://www.chopni.com/image/cache/categories/clothes/men-200x200.jpg" >
+        {% endif %}
+        <p>Name:{{service.name}}</p>
+        <p>Yob:{{service.yob}}</p>
+        <p>Gender:{{service.gender}}</p>
+        <p>Height:{{service.height}}</p>
+        <p>Phone:{{service.phone}}</p>
+        <p>Address:{{service.address}}</p>
+        <p>Status:{{service.status}}</p>
+    </div>
+    <hr>
+    {% endfor %}
+  </body>
+</html>
