@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Get Me</title>
+  </head>
+  <body>
+    <h1>Find your partner</h1>
+    {% for customer in all_customer %}
+    <div>
+      {%if customer.gender==0%}
+      <img src={{customer.image}} alt="">
+      {% endif %}
+      {% if customer.gender == 1 %}
+      <img src={{customer.image}} alt="">
+      {% endif %}
+      <p>Name:{{customer.name}}</p>
+      <p>{{"Male" if customer.gender == 1 else "Female"}}</p>
+      <p>Email:{{customer.email}}</p>
+      <p>Phone:{{customer.phone}}</p>
+      <p>
+        <a href="{{ url_for('detail', customer_id = customer.id) }}">Detail</a></p>
+
+      <hr>
+    </div>
+    {% endfor %}
+
+  </body>
+</html>

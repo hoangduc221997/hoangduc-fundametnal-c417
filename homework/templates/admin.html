@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> ADMIN DZ</title>
+  </head>
+  <h3> ADMIN </h3>
+  <body>
+
+  <table border ="1px">
+    <thead>
+      <th> STT </th>
+      <th>Name</th>
+
+      <th>Gender</th>
+
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Description</th>
+      <th>Measurements</th>
+      <th>Status</th>
+      <th> <a href="{{url_for('create')}}"><h4> Add </h4></a> </th>
+    </thead>
+  <tbody>
+        {% for customer in all_customer %}
+<tr>
+  <td>{{loop.index}}</td>
+  <td>{{customer.name}}</td>
+
+  <td>{{"Male" if customer.gender == 1 else "Female"}}</td>
+  <td>{{customer.phone}}</td>
+
+  <td>{{customer.address}}</td>
+  <td>{{customer.description}}</td>
+  <td>{{customer.measurements}}</td>
+  <td>{{"Free" if customer.contacted == True else "Busy"}}
+  </td>
+  <td> <a href="{{url_for('update', customer_id = customer.id)}}"> <b>EDIT</b> </a> </td>
+  <td> <a href="{{url_for('delete', customer_id = customer.id)}}"><b>Delete</b></a>  </td>
+</tr>
+  {% endfor %}
+      </tbody>
+    </table>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DETAILS</title>
+  </head>
+  <img src={{customer_id.image}} alt="">
+  <body>
+    <h3>
+      <p>Name:{{customer_id.name}}</p>
+    </h3>
+    <p>Phone {{customer_id.phone}}</p>
+    <p>  {{"Male" if customer_id.gender == 1 else "Female"}}</p>
+    <p>Address:{{customer_id.address}}</p>
+    <p>Description:{{customer_id.description}}</p>
+    <p>Measurements:{{customer_id.measurements[:2]}}</p>
+    <p>{{"Free" if customer_id.gender == True else "Busy"}}</p>
+
+
+  </body>
+</html>
