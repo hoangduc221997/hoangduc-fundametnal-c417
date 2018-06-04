@@ -1,0 +1,144 @@
+.mb-300px{
+  margin-bottom: 300px
+}
+.mb-100px{
+  margin-bottom: 100px
+}
+
+.mt-200px{
+  margin-top: 0px
+}
+
+.mt-100px{
+  margin-top: 100px
+}
+
+.bg-lightgreen{
+  background-color: lightgreen
+}
+.h-50px{
+  height: 50px
+}
+
+.w-30{
+  width: 30%
+}
+
+.h-200px{
+  height: 200px
+}
+
+.h-150px{
+  height: 150px
+}
+
+.w-150px{
+  width: 150px
+}
+
+.w-100{
+  width: 100%
+}
+
+.h-500px{
+  height: 400px
+}
+
+.w-400px{
+  width: 400px
+}
+
+.h-250x{
+  height: 250px
+}
+
+.h-100px{
+  height: 100px
+}
+.w-30{
+  width: 30%
+}
+
+.h-15{
+  height: 15%
+}
+
+.w-300px{
+  width: 300px
+}
+
+.bg-image1{
+  background-image: url("image/6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bg-image2{
+  background-image: url("image/5.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-image{
+  background-image: url("image/bg0.jpg");
+  background-size:cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+.bg-im{
+  background-image: url("image/bg.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-im1{
+  background-image: url("image/bg1.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-im2{
+  background-image: url("image/bg2.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-im3{
+  background-image: url("image/bg3.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-im4{
+  background-image: url("image/bg4.png");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-im5{
+  background-image: url("image/bg5.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-im6{
+  background-image: url("image/bg6.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-im7{
+  background-image: url("image/bg7.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.d-inline-block{
+  display: inline-block;
+}
+
+.h-600px{
+  height: 600px
+}
